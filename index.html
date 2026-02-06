@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | M. Akhdan Erlangga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2d6a4f;
+            --secondary-green: #40916c;
+            --accent-green: #95d5b2;
+            --bg-light: #f7fff7;
+            --text-dark: #1b4332;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cv-container {
+            background: #fff;
+            max-width: 850px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--accent-green);
+            margin-bottom: 15px;
+            object-fit: cover;
+            /* Placeholder untuk foto diri */
+            background: #eee;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Layout Main */
+        .main-content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            border-left: 5px solid var(--primary-green);
+            padding-left: 10px;
+            margin-bottom: 15px;
+            color: var(--primary-green);
+            text-transform: uppercase;
+        }
+
+        /* List Items */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-list li strong {
+            display: inline-block;
+            width: 120px;
+            color: var(--secondary-green);
+        }
+
+        /* Education & Skills */
+        .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-year {
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+
+        .skill-badge {
+            background: var(--accent-green);
+            color: var(--primary-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        /* Social Media */
+        .sosmed a {
+            text-decoration: none;
+            color: var(--secondary-green);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Foto M. Akhdan Erlangga" class="profile-img">
+        <h1>M. Akhdan Erlangga</h1>
+        <p>"Saya adalah pribadi yang percaya diri dan berdedikasi tinggi."</p>
+    </header>
+
+    <div class="main-content">
+        <div class="col">
+            <section>
+                <h3>Informasi Pribadi</h3>
+                <ul class="info-list">
+                    <li><strong>Lahir:</strong> 19 Agustus 2007</li>
+                    <li><strong>Telepon:</strong> 083862445350</li>
+                    <li><strong>Alamat:</strong> Kp. Cijagra rt 01 rw 09</li>
+                    <li><strong>Hobby:</strong> Sepak Bola</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Pendidikan</h3>
+                <div class="edu-item">
+                    <span class="edu-year">2023 - 2026</span>
+                    <p>SMA KP Baleendah</p>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-year">2020 - 2023</span>
+                    <p>SMP Dayeuhkolot</p>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-year">Lulus 2020</span>
+                    <p>SDN Cijagra</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="col">
+            <section>
+                <h3>Keahlian</h3>
+                <div class="skill-badge">Berolahraga</div>
+                <div class="skill-badge">Kerja Tim</div>
+                <div class="skill-badge">Kepemimpinan</div>
+            </section>
+
+            <section>
+                <h3>Bahasa</h3>
+                <p>• Indonesia (Native)</p>
+                <p>• Inggris (Conversational)</p>
+            </section>
+
+            <section>
+                <h3>Sosial Media</h3>
+                <ul class="info-list sosmed">
+                    <li><strong>Instagram:</strong> <a href="#">@Akhdan</a></li>
+                    <li><strong>Facebook:</strong> - </li>
+                    <li><strong>TikTok:</strong> - </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Organisasi & Sertifikat</h3>
+                <p style="color: #999; font-style: italic;">Belum ada data pengalaman.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 - M. Akhdan Erlangga | Dibuat untuk Website Portfolio
+    </footer>
+</div>
+
+</body>
+</html>
